@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <linK rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <title>Blog</title>
 </head>
 <body>
     <div class="header">
-        <button class="expand" type="button">
+        <button class="expand" type="button" onclick="clickSidebar()">
             <img src="./img/expand.png" alt="">
         </button>
         <h1>Judul Judul</h1>
-        <a href="https://ubpkarawang.ac.id/">
-            <button class="logo" type="button">
-                <img src="./img/ubp.png" alt="">
-            </button>
-        </a> 
+        <a class="logo" href="https://ubpkarawang.ac.id/">
+            <img src="./img/ubp.png" alt="">
+        </a>
+        <div class="sidebar" id="sidebar">
+            <button class="outer" type="button" onclick="animSidebar('close')"></button>
+            <a class="item" href="#">
+                <img class="icon" src="./img/expand.png">
+                <p class="name">Cara Mencari Waifu</p>
+            </a>
+            <a class="item" href="#">
+                <img class="icon" src="./img/expand.png">
+                <p class="name">Kenyataan Dunia Isekai</p>
+            </a>
+            <a class="item" href="#">
+                <img class="icon" src="./img/expand.png">
+                <p class="name">Arti Senja dan Ketenangan</p>
+            </a>
+            <a class="item" href="#">
+                <img class="icon" src="./img/expand.png">
+                <p class="name">Kisah Mencari Tinta Sejati</p>
+            </a>
+            <a class="item" href="#">
+                <img class="icon" src="./img/expand.png">
+                <p class="name">Angin yg Menghilang</p>
+            </a>
+        </div>
     </div>
     <div class="author">
         <p class="p1">Di Posting oleh: Bisma</p>
