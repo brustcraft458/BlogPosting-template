@@ -1,5 +1,14 @@
 <?php
 $jk = "Laki-Laki";
+
+// New id
+function newNoAnggota() {
+    global $anggotaList;
+    $no_anggota = count($anggotaList);
+    $no_anggota++;
+    $no_anggota = sprintf('%03d', $no_anggota); // 001
+    return $no_anggota;
+}
 ?>
 
 <!DOCTYPE html>
